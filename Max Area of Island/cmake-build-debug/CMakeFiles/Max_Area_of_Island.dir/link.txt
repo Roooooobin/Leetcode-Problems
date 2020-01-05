@@ -1,0 +1,3 @@
+"D:\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Max_Area_of_Island.dir/objects.a
+D:\mingw\mingw64\bin\ar.exe cr CMakeFiles\Max_Area_of_Island.dir/objects.a @CMakeFiles\Max_Area_of_Island.dir\objects1.rsp
+D:\mingw\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Max_Area_of_Island.dir/objects.a -Wl,--no-whole-archive  -o Max_Area_of_Island.exe -Wl,--out-implib,libMax_Area_of_Island.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Max_Area_of_Island.dir\linklibs.rsp

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1552826774 source:c:\users\robin\desktop\万万没想到之聪明的编辑\main.cpp
+	<cstdio>
+	<cstdlib>
+	<regex>
+	<iostream>
+

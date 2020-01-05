@@ -1,0 +1,3 @@
+"D:\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Sum_of_Left_Leaves.dir/objects.a
+D:\mingw\mingw64\bin\ar.exe cr CMakeFiles\Sum_of_Left_Leaves.dir/objects.a @CMakeFiles\Sum_of_Left_Leaves.dir\objects1.rsp
+D:\mingw\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Sum_of_Left_Leaves.dir/objects.a -Wl,--no-whole-archive  -o Sum_of_Left_Leaves.exe -Wl,--out-implib,libSum_of_Left_Leaves.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Sum_of_Left_Leaves.dir\linklibs.rsp

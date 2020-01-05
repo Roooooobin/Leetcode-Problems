@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LinkedList_Components_Solution"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinkedList_Components_Solution">
+				<Option output="C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/LinkedList_Components_Solution.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkedList_Components_Solution"/>
+					<CompileFile command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinkedList_Components_Solution/fast">
+				<Option output="C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/LinkedList_Components_Solution.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkedList_Components_Solution/fast"/>
+					<CompileFile command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/robin/CLionProjects/LinkedList Components Solution/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/robin/CLionProjects/LinkedList Components Solution/main.c">
+			<Option target="LinkedList_Components_Solution"/>
+		</Unit>
+		<Unit filename="C:/Users/robin/CLionProjects/LinkedList Components Solution/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

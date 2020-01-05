@@ -1,0 +1,3 @@
+"D:\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Move_Zeroes.dir/objects.a
+D:\mingw\mingw64\bin\ar.exe cr CMakeFiles\Move_Zeroes.dir/objects.a @CMakeFiles\Move_Zeroes.dir\objects1.rsp
+D:\mingw\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Move_Zeroes.dir/objects.a -Wl,--no-whole-archive  -o Move_Zeroes.exe -Wl,--out-implib,libMove_Zeroes.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Move_Zeroes.dir\linklibs.rsp
