@@ -29,6 +29,15 @@ string frequencySort(string s) {
     return ret;
 }
 
+string frequencySort(string s) {
+    map<char, int> char2count;
+    for(auto& c: s){
+        char2count[c]++;
+    }
+    sort(s.begin(), s.end(), [&](char a, char b){return char2count[a] > char2count[b] || (char2count[a] == char2count[b] && a < b);});
+    return s;
+}
+
 int main() {
     string ans = frequencySort("cbacbA");
     cout << ans << endl;
