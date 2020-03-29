@@ -1,44 +1,45 @@
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
 
 class LRUCache {
+private:
+    int size;
+    list<int> lru;
+    unordered_map<int, list<int>::iterator> k2iter;
+    unordered_map<int, int> k2v;
+
 public:
-    LRUCache(int capacity) : _capacity(capacity) {}
+    LRUCache(int capacity) {
+        size = capacity;
+    }
 
     int get(int key) {
-        auto it = cache.find(key);
-        if (it == cache.end()) return -1;
-        touch(it);
-        return it->second.first;
+        if(!k2v.count(key)) return -1;
+        update(key);
+        return k2v[key];
     }
 
-    void set(int key, int value) {
-        auto it = cache.find(key);
-        if (it != cache.end()) touch(it);
-        else {
-            if (cache.size() == _capacity) {
-                cache.erase(used.back());
-                used.pop_back();
-            }
-            used.push_front(key);
+    void put(int key, int value) {
+        if(k2v.size() == size && !k2v.count(key)){
+            pop();
         }
-        cache[key] = { value, used.begin() };
+        update(key);
+        k2v[key] = value;
     }
 
-private:
-    typedef list<int> LI;
-    typedef pair<int, LI::iterator> PII;
-    typedef unordered_map<int, PII> HIPII;
-
-    void touch(HIPII::iterator it) {
-        int key = it->first;
-        used.erase(it->second.second);
-        used.push_front(key);
-        it->second.second = used.begin();
+    void update(int key){
+        if(k2v.count(key)){
+            lru.erase(k2iter[key]);
+        }
+        lru.push_front(key);
+        k2iter[key] = lru.begin();
     }
 
-    HIPII cache;
-    LI used;
-    int _capacity;
+    void pop(){
+        k2iter.erase(lru.back());
+        k2v.erase(lru.back());
+        lru.pop_back();
+    }
 };
 
 int main() {
