@@ -1,10 +1,5 @@
 #include <bits/stdc++.h>
-#define INF 0x3f3f3f3f
 using namespace std;
-
-const int MAXN = 1e5 + 23;
-typedef long long LL;
-typedef vector<int> VI;
 
 struct ListNode {
    int val;
@@ -12,18 +7,25 @@ struct ListNode {
    ListNode(int x) : val(x), next(NULL) {}
 };
 
+// leetcode-206 by Robin
 ListNode* reverseList(ListNode* head) {
     if(!head || !head->next) return head;
-    ListNode *pre = NULL;
-    ListNode *p = head;
-    ListNode *q = NULL;
-    while(p){
-        q = p->next;
-        p->next = pre;
-        pre = p;
-        p = q;
+    ListNode *pre = NULL, *cur = head, *tmp = NULL;
+    while(cur){
+        tmp = cur->next;
+        cur->next = pre;
+        pre = cur;
+        cur = tmp;
     }
     return pre;
+}
+
+ListNode* reverseList(ListNode* head) {
+    if(!head || !head->next) return head;
+    ListNode *p = reverseList(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return p;
 }
 
 int main()
