@@ -9,16 +9,41 @@ using namespace std;
 //    return ret;
 //}
 
-int solve(vector<int>& nums, int i, int j){
-    if(i > j) return 0;
-    if(i == j){
-        return nums[i];
-    }
-    return solve(nums, i, (i+j)/2) ^ solve(nums, (i+j)/2+1, j);
-}
+//int solve(vector<int>& nums, int i, int j){
+//    if(i > j) return 0;
+//    if(i == j){
+//        return nums[i];
+//    }
+//    return solve(nums, i, (i+j)/2) ^ solve(nums, (i+j)/2+1, j);
+//}
+//
+//int singleNonDuplicate(vector<int>& nums) {
+//    return solve(nums, 0, nums.size()-1);
+//}
 
+// leetcode-540 by Robin
 int singleNonDuplicate(vector<int>& nums) {
-    return solve(nums, 0, nums.size()-1);
+    int l = 0, r = nums.size() - 1;
+    while(l < r){
+        int mid = l + (r - l) / 2;
+        if(mid % 2 == 0){
+            if(nums[mid] == nums[mid+1]){
+                l = mid + 2;
+            }
+            else{
+                r = mid;
+            }
+        }
+        else{
+            if(nums[mid] == nums[mid-1]){
+                l = mid + 1;
+            }
+            else{
+                r = mid;
+            }
+        }
+    }
+    return nums[l];
 }
 
 int main() {
